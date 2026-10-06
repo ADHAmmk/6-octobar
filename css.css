@@ -1,6 +1,18 @@
-*{
-    padding: 0;
+
+
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
 }
 
 nav{
@@ -29,7 +41,7 @@ li:hover{
 
 .pi{
     
-    height: 300px;
+    height: 420px;
      background-image:
         linear-gradient(to left, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.05)),
         url("h.jpg");
@@ -154,4 +166,108 @@ ul{
 
 body {
     font-family: "Changa", sans-serif;
+}
+/* ================= Tablet ================= */
+@media (max-width: 992px) {
+    nav {
+        padding: 10px 5%;
+    }
+
+    .pi {
+        height: auto;
+        min-height: 300px;
+        padding: 60px 5%;
+    }
+
+    .df {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+/* ================= Mobile ================= */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .pi {
+        padding: 40px 5%;
+        text-align: center;
+    }
+
+    .hh {
+        font-size: 28px;
+    }
+
+    button {
+        padding: 12px 40px;
+    }
+
+    .df {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .e {
+        width: 90%;
+        max-width: 350px;
+        height: auto;
+        min-height: 210px;
+    }
+
+    .k {
+        width: 100%;
+    }
+
+    .w {
+        font-size: 40px;
+    }
+
+    .ii {
+        line-height: 36px;
+    }
+
+    .egypt {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* ============== Small phones ============== */
+@media (max-width: 480px) {
+    ul {
+        font-size: 14px;
+        gap: 10px;
+    }
+
+    .hh {
+        font-size: 24px;
+    }
+
+    .w {
+        font-size: 34px;
+    }
+
+    .j {
+        font-size: 17px;
+    }
+
+    .ss {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px 20px;
+    }
 }
