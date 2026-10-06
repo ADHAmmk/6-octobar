@@ -51,6 +51,15 @@ li:hover{
     background-repeat: no-repeat;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.asa{
+    font-weight: 600;
+}
+
 .hh{
     font-weight: 700;
 }
