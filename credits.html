@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>شكر وتقدير</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Changa", sans-serif;
+            background: #0a0a0a;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: white;
+            gap: 30px;
+        }
+
+        .page-title {
+            font-size: 26px;
+            font-weight: 800;
+            color: #fff;
+            text-align: center;
+            letter-spacing: 1px;
+            text-shadow: 0 0 15px rgba(180, 0, 0, 0.6);
+            animation: fadeDown 0.8s ease forwards;
+        }
+
+        .cards-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            width: 90%;
+            max-width: 650px;
+        }
+
+        /* المربع الأول - تصميم وفكرة */
+        .card-top {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid darkred;
+            border-radius: 14px;
+            padding: 22px 30px;
+            text-align: center;
+            box-shadow: 0 0 25px rgba(180, 0, 0, 0.3);
+            animation: fadeUp 0.7s ease forwards;
+        }
+
+        .card-top .label {
+            font-size: 14px;
+            color: #aaa;
+            margin-bottom: 6px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .card-top .name {
+            font-size: 22px;
+            font-weight: 800;
+            color: #fff;
+        }
+
+        /* صف المربعين */
+        .cards-row {
+            display: flex;
+            gap: 20px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .card {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(180, 0, 0, 0.5);
+            border-radius: 14px;
+            padding: 20px 20px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(180, 0, 0, 0.15);
+            animation: fadeUp 0.9s ease forwards;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 30px rgba(180, 0, 0, 0.4);
+        }
+
+        .card .label {
+            font-size: 12px;
+            color: #aaa;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .card .name {
+            font-size: 17px;
+            font-weight: 800;
+            color: #fff;
+        }
+
+        .divider {
+            width: 60px;
+            height: 3px;
+            background: darkred;
+            border-radius: 10px;
+            margin: 4px auto 0;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <p class="page-title">🎖️ شكر وتقدير</p>
+
+    <div class="cards-wrapper">
+
+        <!-- المربع الأول -->
+        <div class="card-top">
+            <p class="label">تصميم وفكرة</p>
+            <div class="divider"></div>
+            <p class="name" style="margin-top:10px;">السيد سالم حسين</p>
+        </div>
+
+        <!-- صف المربعين -->
+        <div class="cards-row">
+            <div class="card">
+                <p class="label">وكيله المدرسه</p>
+                <div class="divider"></div>
+                <p class="name" style="margin-top:10px;">مني محمود رجال</p>
+            </div>
+
+            <div class="card">
+                <p class="label">مدير المدرسه</p>
+                <div class="divider"></div>
+                <p class="name" style="margin-top:10px;">اشرف عبد الباسط</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        setTimeout(function () {
+            window.location.href = 'programmer.html';
+        }, 4000);
+    </script>
+
+</body>
+</html>
